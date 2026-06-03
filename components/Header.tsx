@@ -6,9 +6,12 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-graphite/10 bg-porcelain/92 backdrop-blur">
       <div className="container-px flex min-h-[var(--header-height)] items-center justify-between gap-6">
-        <Link href="/" className="focus-ring flex flex-col rounded-sm leading-tight">
-          <span className="text-sm font-black uppercase tracking-[0.18em] text-ink">FIA</span>
-          <span className="hidden text-xs text-slate sm:block">Русскоязычное отделение</span>
+        <Link href="/" className="focus-ring flex items-center gap-3 rounded-sm leading-tight">
+          <img src="/images/fia-logo.svg" alt="Fowler International Academy of Professional Coaching" className="h-12 w-auto" />
+          <span className="hidden max-w-[230px] flex-col leading-tight xl:flex">
+            <span className="text-xs font-bold text-ink">Fowler International Academy of Professional Coaching</span>
+            <span className="mt-1 text-xs text-slate">Казахстан и Центральная Азия</span>
+          </span>
         </Link>
         <nav className="hidden items-center gap-6 text-sm font-medium text-graphite lg:flex">
           {navigation.map((item) => (

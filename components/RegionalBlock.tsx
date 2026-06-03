@@ -7,12 +7,12 @@ export function RegionalBlock() {
       <div className="grid items-center gap-10 lg:grid-cols-[0.95fr_1.05fr]">
         <div>
           <p className="mb-4 text-xs font-bold uppercase tracking-[0.18em] text-brass">Казахстан и Центральная Азия</p>
-          <h2 className="display-title text-4xl font-semibold leading-tight text-ink md:text-5xl">Генеральное представительство FIA в Казахстане и Центральной Азии</h2>
+          <h2 className="display-title text-4xl font-semibold leading-tight text-ink md:text-5xl">Официальное представительство FIA в Казахстане и Центральной Азии</h2>
           <p className="mt-6 text-lg leading-8 text-slate">
-            Мы остаёмся частью русскоязычного отделения Fowler International Academy of Professional Coaching и развиваем доступ к программам FIA для студентов из Казахстана, Центральной Азии и других русскоязычных стран.
+            Мы представляем Fowler International Academy of Professional Coaching в Казахстане и Центральной Азии и развиваем доступ к программам FIA для студентов из региона и других русскоязычных стран.
           </p>
           <p className="mt-4 text-lg leading-8 text-slate">
-            Мы помогаем выбрать программу, разобраться в формате обучения и пройти понятный путь от первого вопроса до подачи заявки.
+            Вы получаете понятную точку входа в программы FIA, консультацию на русском языке и связь с международной академией профессионального коучинга.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Button href="/contacts">Получить консультацию</Button>

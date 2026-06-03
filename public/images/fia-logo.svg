@@ -1,0 +1,8 @@
+<svg width="320" height="130" viewBox="0 0 320 130" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fowler International Academy of Professional Coaching">
+  <rect width="320" height="130" fill="white"/>
+  <text x="18" y="78" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="700" fill="#1B3F5A">FIA</text>
+  <line x1="19" y1="92" x2="145" y2="92" stroke="#B78A45" stroke-width="3"/>
+  <text x="164" y="49" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#1B3F5A">FOWLER</text>
+  <text x="164" y="69" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="1.4" fill="#1B3F5A">INTERNATIONAL ACADEMY</text>
+  <text x="164" y="87" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="0.8" fill="#5D6670">OF PROFESSIONAL COACHING</text>
+</svg>

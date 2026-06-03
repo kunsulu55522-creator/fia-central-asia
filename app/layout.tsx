@@ -4,12 +4,12 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "FIA — Русскоязычное отделение",
-  description: "Fowler International Academy of Professional Coaching — Русскоязычное отделение и генеральное представительство FIA в Казахстане и Центральной Азии.",
+  title: "FIA — Казахстан и Центральная Азия",
+  description: "Официальное представительство Fowler International Academy of Professional Coaching в Казахстане и Центральной Азии.",
   metadataBase: new URL("https://fia-russian.example"),
   openGraph: {
-    title: "FIA — Русскоязычное отделение",
-    description: "Профессиональный коучинг по методологии FIA на русском языке.",
+    title: "FIA — Казахстан и Центральная Азия",
+    description: "Официальное представительство Fowler International Academy of Professional Coaching в Казахстане и Центральной Азии.",
     images: ["/images/fia-hero-training.png"]
   }
 };

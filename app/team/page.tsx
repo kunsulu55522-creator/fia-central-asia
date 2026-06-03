@@ -5,7 +5,7 @@ import { team } from "@/data/site";
 export default function TeamPage() {
   return (
     <>
-      <Hero eyebrow="Наша команда" title="Люди, которые помогают пройти путь в FIA" text="Мы сопровождаем студентов из Казахстана, Центральной Азии и других русскоязычных стран: помогаем познакомиться с академией, выбрать программу и пройти обучение в международном контексте FIA." image="/images/fia-hero-training.png" primaryLabel="Оставить заявку" primaryHref="/contacts" secondaryLabel="Смотреть программы" secondaryHref="/programs" />
+      <Hero eyebrow="Наша команда" title="Эксперты и тренеры Fowler International Academy of Professional Coaching" text="Эксперты и тренеры Fowler International Academy of Professional Coaching, которые помогают студентам осваивать международные стандарты коучинга и применять их на практике." image="/images/fia-hero-training.png" primaryLabel="Оставить заявку" primaryHref="/contacts" secondaryLabel="Смотреть программы" secondaryHref="/programs" />
       <section className="container-px bg-porcelain py-20">
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
           {team.map((member) => (

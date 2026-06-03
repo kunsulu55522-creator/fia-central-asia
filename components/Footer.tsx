@@ -8,7 +8,7 @@ export function Footer() {
         <div>
           <p className="text-sm font-black uppercase tracking-[0.18em]">Fowler International Academy</p>
           <p className="mt-4 max-w-xl text-sm leading-7 text-white/70">
-            Русскоязычное отделение FIA и генеральное представительство FIA в Казахстане и Центральной Азии. Мы обучаем студентов из Казахстана, Центральной Азии и других русскоязычных стран коучингу как практической системе работы с целями, решениями и ответственностью.
+            Официальное представительство Fowler International Academy of Professional Coaching в Казахстане и Центральной Азии. Студенты из Казахстана, Центральной Азии и других русскоязычных стран получают доступ к программам FIA и международным стандартам коучинга.
           </p>
         </div>
         <div>
