@@ -1,38 +1,25 @@
-import { Button } from "./Button";
+import Link from "next/link";
+import type { programs } from "@/data/site";
 
-type ProgramCardProps = {
-  title: string;
-  label: string;
-  summary: string;
-  audience: string;
-  href: string;
-  result?: string;
-  benefits?: string[];
-  featured?: boolean;
-};
+type Program = (typeof programs)[number];
 
-export function ProgramCard({ title, label, summary, audience, href, result, benefits = [], featured = false }: ProgramCardProps) {
+export function ProgramCard({ program }: { program: Program }) {
   return (
-    <article className={`hover-lift rounded-lg border p-6 ${featured ? "border-brass/50 bg-[#FFFCF7]" : "border-graphite/10 bg-white"}`}>
-      <p className="text-xs font-bold uppercase tracking-[0.16em] text-brass">{label}</p>
-      <h3 className="mt-4 text-2xl font-semibold leading-tight text-ink">{title}</h3>
-      <p className="mt-4 text-sm leading-7 text-slate">{summary}</p>
-      <div className="mt-5 border-t border-graphite/10 pt-5">
-        <p className="text-xs font-bold uppercase tracking-[0.14em] text-graphite">Кому подходит</p>
-        <p className="mt-2 text-sm leading-6 text-slate">{audience}</p>
+    <article className="hover-lift group border-t border-line pt-6">
+      <p className="text-sm font-extrabold uppercase text-gold">{program.label}</p>
+      <h3 className="mt-4 text-2xl font-extrabold leading-tight text-ink">
+        {program.title}
+      </h3>
+      <p className="mt-4 min-h-16 text-base leading-7 text-ink/70">{program.summary}</p>
+      <div className="mt-6 flex items-center justify-between gap-4">
+        <Link
+          className="text-sm font-extrabold text-forest underline-offset-4 group-hover:underline"
+          href={`/programs/${program.slug}`}
+        >
+          Подробнее
+        </Link>
+        <span aria-hidden className="text-2xl text-gold">→</span>
       </div>
-      {result ? (
-        <div className="mt-5 border-t border-graphite/10 pt-5">
-          <p className="text-xs font-bold uppercase tracking-[0.14em] text-graphite">Результат</p>
-          <p className="mt-2 text-sm leading-6 text-slate">{result}</p>
-        </div>
-      ) : null}
-      {benefits.length ? (
-        <ul className="mt-5 grid gap-2 text-sm leading-6 text-graphite">
-          {benefits.map((benefit) => <li key={benefit}>• {benefit}</li>)}
-        </ul>
-      ) : null}
-      <Button href={href} variant="ghost" className="mt-6">Подробнее</Button>
     </article>
   );
 }

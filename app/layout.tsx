@@ -1,27 +1,27 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "FIA — Казахстан и Центральная Азия",
-  description: "Официальное представительство Fowler International Academy of Professional Coaching в Казахстане и Центральной Азии.",
-  metadataBase: new URL("https://fia-russian.example"),
+  title: "FIA | Русскоязычное отделение Академии профессионального коучинга",
+  description:
+    "Официальное русскоязычное отделение Fowler International Academy of Professional Coaching. Американская методология, ICF-аккредитация и практическое обучение коучингу.",
+  metadataBase: new URL("https://fia-russian.vercel.app"),
   openGraph: {
-    title: "FIA — Казахстан и Центральная Азия",
-    description: "Официальное представительство Fowler International Academy of Professional Coaching в Казахстане и Центральной Азии.",
-    images: ["/images/fia-hero-training.png"]
+    title: "FIA | Русскоязычное отделение",
+    description:
+      "Профессиональное обучение коучингу по американской системе FIA на русском языке.",
+    images: ["/fia-seal.jpeg"]
   }
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({
+  children
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html lang="ru">
-      <body>
-        <Header />
-        <main>{children}</main>
-        <Footer />
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
