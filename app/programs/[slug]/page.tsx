@@ -11,7 +11,9 @@ type ProgramPageProps = {
 };
 
 export function generateStaticParams() {
-  return programs.map((program) => ({ slug: program.slug }));
+  return programs
+    .filter((program) => program.slug !== "specializations")
+    .map((program) => ({ slug: program.slug }));
 }
 
 export async function generateMetadata({
