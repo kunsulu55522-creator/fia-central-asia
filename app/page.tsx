@@ -142,8 +142,16 @@ export default function Home() {
             </div>
             <div className="grid gap-4">
               {team.map((member) => (
-                <div className="rounded-lg border border-line bg-white p-5 text-base font-semibold leading-7" key={member}>
-                  {member}
+                <div
+                  className="rounded-lg border border-line bg-white p-5 leading-7"
+                  key={member.name}
+                >
+                  <h3 className="text-lg font-extrabold text-forest">
+                    {member.name}
+                  </h3>
+                  <p className="mt-1 text-base font-semibold text-ink/70">
+                    {member.role}
+                  </p>
                 </div>
               ))}
             </div>
