@@ -51,29 +51,6 @@ export const audiences = [
   }
 ];
 
-export const trustStats = [
-  {
-    value: "ICF",
-    label: "Международный стандарт",
-    description: "Сертификат FIA аккредитован ICF."
-  },
-  {
-    value: "10 000+",
-    label: "Выпускников",
-    description: "Глобальное сообщество студентов и практиков FIA."
-  },
-  {
-    value: "90",
-    label: "Стран",
-    description: "Международная применимость профессии и методологии."
-  },
-  {
-    value: "45 лет",
-    label: "Опыт основателя",
-    description: "Предпринимательская и коучинговая экспертиза Берри Фаулера."
-  }
-];
-
 export const programs = [
   {
     slug: "basic-intensive",
